@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="bg-[#D8D2C2] text-[#4A4947]">
+        <nav class="flex justify-between">
+          <div class="mt-5 mb-3 pl-10">
+            <h2 class="text-xl font-bold">John Carlo Pelayo</h2>
+            <p class="text-sm">
+              <i class="fa-solid fa-envelope pr-2"></i>
+              pelayo.johncarlo.singco@gmail.com
+            </p>
+            <p class="text-sm">
+              <i class="fa-solid fa-phone"></i>
+              +639918132892
+            </p>
+          </div>
+          <ul class="mt-5 flex gap-10 mr-5 font-sans text-lg font-semibold items-center pb-5">
+            <li>
+              <a href="../WebPages/Home.html" class="hover:text-bold hover:font-bold hover:underline">About Me</a>
+            </li>
+            <li>
+              <a href="../WebPages/Skills.html" class="hover:text-bold hover:font-bold hover:underline">Skills</a>
+            </li>
+            <li>
+              <a href="../WebPages/Projeccts.html" class="hover:text-bold hover:font-bold hover:underline">Projects</a>
+            </li>
+            <li>
+              <a href="../WebPages/Recomendation.html" class="text-[#B17457] hover:text-bold hover:font-bold hover:underline">Recomendation</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class= "bg-[#FAF7F0]">
+        
+        <div  id="recommendation-container" class="flex justify-start flex-wrap gap-10 pt-10 px-10">
+            <div class="border border-gray-400 rounded-lg w-96 h-48 flex flex-col">
+                <div class="flex justify-center p-6">
+                    <h2>Cms Smith</h2>
+                </div>
+                <div class="flex-1 px-4 pb-6 overflow-auto">
+                    <h3 class="break-words">
+                        "Carlo is an exceptional team player and always goes above and beyond in his work."
+                    </h3>
+                </div>
+            </div>
+        
+            <div class="border border-gray-400 rounded-lg w-96 h-48 flex flex-col">
+                <div class="flex justify-center p-6">
+                    <h2>Jaydee</h2>
+                </div>
+                <div class="flex-1 px-4 pb-6">
+                    <h3 class="break-words">
+                        "Carlo’s creativity and dedication to web development are truly inspiring!"
+                    </h3>
+                </div>
+            </div>
+        
+            <div class="border border-gray-400 rounded-lg w-96 h-48 flex flex-col">
+                <div class="flex justify-center p-6">
+                    <h2>Emil</h2>
+                </div>
+                <div class="flex-1 px-4 pb-6 overflow-auto">
+                    <h3 class="break-words">
+                        "Carlo’s problem-solving skills and attention to detail make him stand out."
+                    </h3>
+                </div>
+            </div>
+        
+            <div class="border border-gray-400 rounded-lg w-96 h-48 flex flex-col">
+                <div class="flex justify-center p-6">
+                    <h2>Chris Boborol</h2>
+                </div>
+                <div class="flex-1 px-4 pb-6">
+                    <h3 class="break-words">
+                        "Working with Carlo has been an absolute pleasure. His expertise is unmatched."
+                    </h3>
+                </div>
+            </div>
+        
+            <div class="border border-gray-400 rounded-lg w-96 h-48 flex flex-col">
+                <div class="flex justify-center p-6">
+                    <h2>Sarah Caido</h2>
+                </div>
+                <div class="flex-1 px-4 pb-6">
+                    <h3 class="break-words">
+                        "Carlo is not only talented but also an inspiring leader in every project."
+                    </h3>
+                </div>
+            </div>
+        </div>
+        
+            <div class="flex justify-center pt-10">
+                <div class="grid w-[40rem] rounded-xl p-6">
+                    <div class="flex flex-col">
+                        <h1 class="text-3xl font-bold mb-4">Leave Recommendation</h1>
+                        <input id="name" type="text" class="w-[37rem] mt-4 px-4 py-2 border border-gray-300 rounded-md" placeholder="Name (Optional)">
+                        <textarea id="message" class="w-[37rem] h-56 mt-10 px-4 py-2 border border-gray-300 rounded-md" placeholder="Message"></textarea>
+
+                    </div>
+                    <div class="flex justify-center pt-5">
+                        <button id="submit-btn" class="bg-[#d48b68] rounded-full font-semibold text-xl w-40 p-3 text-white hover:bg-[#B17457]">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="thank-you-container" class="hidden fixed top-0 left-0 w-full h-full flex items-center justify-center">
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                    <h2 class="text-2xl font-bold mb-4">Thank You!</h2>
+                    <p class="text-lg">Your recommendation has been submitted successfully.</p>
+                    <button id="close-thank-you" class="mt-6 px-6 py-2 bg-[#d48b68] text-white rounded-lg hover:bg-[#B17457]">
+                        Close
+                    </button>
+                </div>
+            </div>
+
+            <div class="flex justify-end pr-8">
+                <button class="bg-[#B17457] rounded-full p-3 h-12 w-12">
+                    <i class="fa-solid fa-arrow-up text-2xl text-white"></i>
+                </button>
+            </div>
+            
+            
+            
+        </div>
+        
+      </main>
+      <script>
+    const container = document.getElementById('recommendation-container');
+    const submitButton = document.getElementById('submit-btn');
+    const thankYouContainer = document.getElementById('thank-you-container');
+    const closeThankYou = document.getElementById('close-thank-you');
+
+    submitButton.addEventListener('click', () => {
+        const name = document.getElementById('name').value.trim() || 'Anonymous';
+        const message = document.getElementById('message').value.trim();
+
+        if (message === '') {
+            alert('Message cannot be empty!');
+            return;
+        }
+
+        // Create new recommendation card
+        const card = document.createElement('div');
+        card.className = 'border border-gray-400 rounded-lg w-96 h-48 flex flex-col';
+
+        card.innerHTML = `
+            <div class="flex justify-center p-6">
+                <h2>${name}</h2>
+            </div>
+            <div class="flex-1 px-4 pb-6 overflow-auto">
+                <h3 class="break-words">"${message}"</h3>
+            </div>
+        `;
+
+        // Add the new card to the top
+        container.prepend(card);
+
+        // Clear input fields
+        document.getElementById('name').value = '';
+        document.getElementById('message').value = '';
+
+        // Show Thank You Message
+        thankYouContainer.classList.remove('hidden');
+    });
+
+    closeThankYou.addEventListener('click', () => {
+        thankYouContainer.classList.add('hidden');
+    });
+</script>
+</body>
+</html> 
